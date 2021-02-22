@@ -1,4 +1,4 @@
-const { ERC1820_REGISTRY_ABI, ERC1820_REGISTRY_ADDRESS, ERC1820_REGISTRY_DEPLOY_TX } = require('./data')
+const { ERC1820_REGISTRY_ABI, ERC1820_REGISTRY_ADDRESS, ERC1820_REGISTRY_DEPLOY_TX } = require('./utils/data')
 
 const ERC1820Registry = async (_wallet) => {
   if ((await ethers.provider.getCode(ERC1820_REGISTRY_ADDRESS)).length > '0x0'.length) {
